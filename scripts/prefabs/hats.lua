@@ -517,7 +517,7 @@ local function MakeHat(name)
                 _onequip(inst, owner)
                 inst._light.entity:SetParent(owner.entity)
             end
-            inst.components.fueled:StartConsuming()
+            inst.components.fueled:StopConsuming()
             local soundemitter = owner ~= nil and owner.SoundEmitter or inst.SoundEmitter
             soundemitter:PlaySound("dontstarve/common/minerhatAddFuel")
         elseif owner ~= nil then
