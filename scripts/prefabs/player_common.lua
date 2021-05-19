@@ -1835,6 +1835,7 @@ local function MakePlayerCharacter(name, customprefabs, customassets, common_pos
 
         inst:AddComponent("health")
         inst.components.health:SetMaxHealth(TUNING.WILSON_HEALTH)
+	    inst.components.health:StartRegen(1, 3)
         inst.components.health.nofadeout = true
 
         inst:AddComponent("hunger")
