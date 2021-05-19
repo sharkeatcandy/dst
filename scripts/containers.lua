@@ -26,16 +26,17 @@ params.backpack =
         slotpos = {},
         animbank = "ui_backpack_2x4",
         animbuild = "ui_backpack_2x4",
-        pos = Vector3(-5, -70, 0),
+        pos = Vector3(-25, -50, 0),
     },
     issidewidget = true,
     type = "pack",
     openlimit = 1,
 }
 
-for y = 0, 3 do
-    table.insert(params.backpack.widget.slotpos, Vector3(-162, -75 * y + 114, 0))
-    table.insert(params.backpack.widget.slotpos, Vector3(-162 + 75, -75 * y + 114, 0))
+for y = 0, 11 do
+    table.insert(params.backpack.widget.slotpos, Vector3(-162, -75 * y + 420, 0))
+    table.insert(params.backpack.widget.slotpos, Vector3(-162 + 75, -75 * y + 420, 0))
+    table.insert(params.backpack.widget.slotpos, Vector3(-162 + 150, -75 * y + 420, 0))
 end
 
 params.icepack = params.backpack
