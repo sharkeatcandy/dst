@@ -54,12 +54,12 @@ Recipe("arrowsign_post", {Ingredient("boards", 1)}, RECIPETABS.TOWN, TECH.SCIENC
 Recipe("minisign_item", {Ingredient("boards", 1)}, RECIPETABS.TOWN, TECH.SCIENCE_ONE, nil, nil, nil, 4)
 Recipe("minisign", {Ingredient("boards", 1)}, nil, TECH.LOST) --so it can be deconstructed
 
-Recipe("fence_gate_item", {Ingredient("boards", 2), Ingredient("rope", 1) }, RECIPETABS.TOWN, TECH.SCIENCE_TWO,nil,nil,nil,1)
-Recipe("fence_item", {Ingredient("twigs", 3), Ingredient("rope", 1) }, RECIPETABS.TOWN, TECH.SCIENCE_ONE,nil,nil,nil,6)
-Recipe("wall_hay_item", {Ingredient("cutgrass", 4), Ingredient("twigs", 2) }, RECIPETABS.TOWN, TECH.SCIENCE_ONE,nil,nil,nil,4)
-Recipe("wall_wood_item", {Ingredient("boards", 2),Ingredient("rope", 1)}, RECIPETABS.TOWN,  TECH.SCIENCE_ONE,nil,nil,nil,8)
-Recipe("wall_stone_item", {Ingredient("cutstone", 2)}, RECIPETABS.TOWN, TECH.SCIENCE_TWO,nil,nil,nil,6)
-Recipe("wall_moonrock_item", {Ingredient("moonrocknugget", 12)}, RECIPETABS.TOWN, TECH.SCIENCE_TWO,nil,nil,nil,4)
+Recipe("fence_gate_item", {Ingredient("boards", 2), Ingredient("rope", 1) }, RECIPETABS.TOWN, TECH.SCIENCE_TWO,nil,nil,nil,99)
+Recipe("fence_item", {Ingredient("twigs", 3), Ingredient("rope", 1) }, RECIPETABS.TOWN, TECH.SCIENCE_ONE,nil,nil,nil,99)
+Recipe("wall_hay_item", {Ingredient("cutgrass", 4), Ingredient("twigs", 2) }, RECIPETABS.TOWN, TECH.SCIENCE_ONE,nil,nil,nil,99)
+Recipe("wall_wood_item", {Ingredient("boards", 2),Ingredient("rope", 1)}, RECIPETABS.TOWN,  TECH.SCIENCE_ONE,nil,nil,nil,99)
+Recipe("wall_stone_item", {Ingredient("cutstone", 2)}, RECIPETABS.TOWN, TECH.SCIENCE_TWO,nil,nil,nil,99)
+Recipe("wall_moonrock_item", {Ingredient("moonrocknugget", 12)}, RECIPETABS.TOWN, TECH.SCIENCE_TWO,nil,nil,nil,99)
 
 Recipe("wardrobe", {Ingredient("boards", 4), Ingredient("cutgrass", 3)}, RECIPETABS.TOWN, TECH.SCIENCE_TWO, "wardrobe_placer")
 Recipe("beefalo_groomer", {Ingredient("boards", 4), Ingredient("beefalowool", 2)}, RECIPETABS.TOWN, TECH.SCIENCE_TWO, "beefalo_groomer_item_placer")
@@ -71,12 +71,12 @@ Recipe("tacklestation", {Ingredient("driftwood_log", 1), Ingredient("transistor"
 Recipe("trophyscale_fish", {Ingredient("ice", 4), Ingredient("boards", 2), Ingredient("cutstone", 1)}, RECIPETABS.TOWN,  TECH.SCIENCE_TWO, "trophyscale_fish_placer")
 Recipe("trophyscale_oversizedveggies", {Ingredient("boards", 4), Ingredient("cutgrass", 4)}, RECIPETABS.TOWN,  TECH.SCIENCE_TWO, "trophyscale_oversizedveggies_placer")
 
-Recipe("turf_road", {Ingredient("turf_rocky", 1), Ingredient("boards", 1)}, RECIPETABS.TOWN,  TECH.SCIENCE_TWO)
-Recipe("turf_woodfloor", {Ingredient("boards", 1)}, RECIPETABS.TOWN, TECH.SCIENCE_TWO)
-Recipe("turf_checkerfloor", {Ingredient("marble", 1)}, RECIPETABS.TOWN, TECH.SCIENCE_TWO)
-Recipe("turf_carpetfloor", {Ingredient("boards", 1), Ingredient("beefalowool", 1)}, RECIPETABS.TOWN, TECH.SCIENCE_TWO)
-Recipe("turf_dragonfly", {Ingredient("dragon_scales", 1), Ingredient("cutstone", 2)}, RECIPETABS.TOWN, TECH.SCIENCE_TWO, nil, nil, nil, 6)
-Recipe("turf_shellbeach", {Ingredient("slurtle_shellpieces", 3)}, RECIPETABS.TOWN,  TECH.LOST)
+Recipe("turf_road", {Ingredient("turf_rocky", 1), Ingredient("boards", 1)}, RECIPETABS.TOWN,  TECH.SCIENCE_TWO, nil, nil, nil, 99)
+Recipe("turf_woodfloor", {Ingredient("boards", 1)}, RECIPETABS.TOWN, TECH.SCIENCE_TWO, nil, nil, nil, 99)
+Recipe("turf_checkerfloor", {Ingredient("marble", 1)}, RECIPETABS.TOWN, TECH.SCIENCE_TWO, nil, nil, nil, 99)
+Recipe("turf_carpetfloor", {Ingredient("boards", 1), Ingredient("beefalowool", 1)}, RECIPETABS.TOWN, TECH.SCIENCE_TWO, nil, nil, nil, 99)
+Recipe("turf_dragonfly", {Ingredient("dragon_scales", 1), Ingredient("cutstone", 2)}, RECIPETABS.TOWN, TECH.SCIENCE_TWO, nil, nil, nil, 99)
+Recipe("turf_shellbeach", {Ingredient("slurtle_shellpieces", 3)}, RECIPETABS.TOWN,  TECH.LOST, nil, nil, nil, 99)
 
 Recipe("pottedfern", {Ingredient("foliage", 5), Ingredient("slurtle_shellpieces", 1)}, RECIPETABS.TOWN, TECH.SCIENCE_TWO, "pottedfern_placer", 0.9)
 Recipe("succulent_potted", {Ingredient("succulent_picked", 5), Ingredient("cutstone", 1)}, RECIPETABS.TOWN, TECH.LOST, "succulent_potted_placer", 0.9)

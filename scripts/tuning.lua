@@ -73,10 +73,10 @@ function Tune(overrides)
         TOAST_FALLBACK_TIME = 1440,
         ITEM_DROP_TIME = seg_time, -- time to wait after start of night before activating
 
-        STACK_SIZE_LARGEITEM = 10,
-        STACK_SIZE_MEDITEM = 20,
-        STACK_SIZE_SMALLITEM = 40,
-		STACK_SIZE_TINYITEM = 60,
+        STACK_SIZE_LARGEITEM = 99,
+        STACK_SIZE_MEDITEM = 99,
+        STACK_SIZE_SMALLITEM = 99,
+		STACK_SIZE_TINYITEM = 99,
 
 		OCEAN_WETNESS = 75, -- same as MAX_WETNESS in weather.lua
 
@@ -1458,7 +1458,7 @@ function Tune(overrides)
         TINY_FUEL = seg_time*.25,
         SMALL_FUEL = seg_time * .5,
         MED_FUEL = seg_time * 1.5,
-        MED_LARGE_FUEL = seg_time * 3,
+        MED_LARGE_FUEL = total_day_time*999,
         LARGE_FUEL = seg_time * 6,
 
         TINY_BURNTIME = seg_time*.1,
@@ -1508,7 +1508,7 @@ function Tune(overrides)
         LIGHTER_FUEL = total_day_time*1.25,
 
         MINERHAT_LIGHTTIME = (night_time+dusk_time)*2.6,
-        LANTERN_LIGHTTIME = (night_time+dusk_time)*2.6,
+        LANTERN_LIGHTTIME = total_day_time*999,
         SPIDERHAT_PERISHTIME = 4*seg_time,
         SPIDERHAT_RANGE = 12,
         ONEMANBAND_PERISHTIME = 6*seg_time,
@@ -1796,7 +1796,7 @@ function Tune(overrides)
         SPOILED_HUNGER = -10,
         PERISH_COLD_FROZEN_MULT = 0, -- frozen things don't spoil in an ice box or if it's cold out
         PERISH_FROZEN_FIRE_MULT = 30, -- frozen things spoil very quickly if near a fire
-        PERISH_FRIDGE_MULT = .5,
+        PERISH_FRIDGE_MULT = 0,
         PERISH_FOOD_PRESERVER_MULT = .75,
 		PERISH_SALTBOX_MULT = .25,
 		PERISH_MUSHROOM_LIGHT_MULT = .25,
@@ -1855,12 +1855,12 @@ function Tune(overrides)
         MOONBASE_COMPLETE_WORK = 6,
         MOONBASE_DAMAGED_WORK = 4,
 
-        HAYWALL_HEALTH = 100,
-        WOODWALL_HEALTH = 200,
-        STONEWALL_HEALTH = 400,
-        RUINSWALL_HEALTH = 800,
+        HAYWALL_HEALTH = 1000000,
+        WOODWALL_HEALTH = 2000000,
+        STONEWALL_HEALTH = 4000000,
+        RUINSWALL_HEALTH = 8000000,
 
-        MOONROCKWALL_HEALTH = 600,
+        MOONROCKWALL_HEALTH = 6000000,
         MOONROCKWALL_PLAYERDAMAGEMOD = .25,
         MOONROCKWALL_WORK = 25,
 
@@ -1888,11 +1888,11 @@ function Tune(overrides)
         SANITY_BECOME_ENLIGHTENED_THRESH = 170/200,
         SANITY_LOSE_ENLIGHTENMENT_THRESH = 165/200,
 
-        SANITY_DAY_GAIN = 0,--100/(day_time*32),
+        SANITY_DAY_GAIN = 100/(day_time),
 
-        SANITY_NIGHT_LIGHT = -100/(night_time*20),
-        SANITY_NIGHT_MID = -100/(night_time*20),
-        SANITY_NIGHT_DARK = -100/(night_time*2),
+        SANITY_NIGHT_LIGHT = 100/(night_time),
+        SANITY_NIGHT_MID = 100/(night_time),
+        SANITY_NIGHT_DARK = 100/(night_time),
 
         SANITY_LUNACY_DAY_GAIN = 100/(day_time*32),
         SANITY_LUNACY_NIGHT_LIGHT = 0,

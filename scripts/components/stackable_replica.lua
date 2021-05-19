@@ -14,7 +14,7 @@ end
 local Stackable = Class(function(self, inst)
     self.inst = inst
 
-    self._stacksize = net_smallbyte(inst.GUID, "stackable._stacksize", "stacksizedirty")
+    self._stacksize = net_byte(inst.GUID, "stackable._stacksize", "stacksizedirty")
     self._maxsize = net_tinybyte(inst.GUID, "stackable._maxsize")
 
     if not TheWorld.ismastersim then
