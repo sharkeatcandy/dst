@@ -76,7 +76,7 @@ local function common_fn(bank, build)
     inst:AddComponent("inventoryitem")
     -----
     inst:AddComponent("tool")
-    inst.components.tool:SetAction(ACTIONS.CHOP, 1)
+    inst.components.tool:SetAction(ACTIONS.CHOP, 15)
 
     if TheNet:GetServerGameMode() ~= "quagmire" then
         -------

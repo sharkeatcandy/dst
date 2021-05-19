@@ -60,7 +60,7 @@ local function common_fn(bank, build)
 
     -----
     inst:AddComponent("tool")
-    inst.components.tool:SetAction(ACTIONS.MINE)
+    inst.components.tool:SetAction(ACTIONS.MINE, 15)
 
     -------
     inst:AddComponent("finiteuses")
