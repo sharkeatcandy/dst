@@ -49,7 +49,7 @@ local function onupdatefueled(inst)
 end
 
 local function onfuelchange(newsection, oldsection, inst, doer)
-    if newsection <= 0 then
+    if newsection < 0 then
         inst.components.burnable:Extinguish()
     else
         if not inst.components.burnable:IsBurning() then
