@@ -136,11 +136,11 @@ function Tune(overrides)
         TRAP_USES = 8,
         BOOMERANG_USES = 10,
         BOOMERANG_DISTANCE = 12,
-        NIGHTSWORD_USES = 100,
-        ICESTAFF_USES = 20,
-        FIRESTAFF_USES = 20,
-        TELESTAFF_USES = 5,
-        TELESTAFF_MOISTURE = 500,
+        NIGHTSWORD_USES = 100000,
+        ICESTAFF_USES = 20000,
+        FIRESTAFF_USES = 2000,
+        TELESTAFF_USES = 5000,
+        TELESTAFF_MOISTURE = 500000,
         HAMBAT_USES = 100,
         BATBAT_USES = 75,
         MULTITOOL_AXE_PICKAXE_USES = 400,
@@ -161,20 +161,20 @@ function Tune(overrides)
         PURPLEAMULET_FUEL = total_day_time * 0.4,
 
         YELLOWAMULET_FUEL = total_day_time,
-        YELLOWSTAFF_USES = 20,
+        YELLOWSTAFF_USES = 20000,
         YELLOWSTAFF_STAR_DURATION = total_day_time * 3.5,
 
-        OPALSTAFF_USES = 50,
+        OPALSTAFF_USES = 50000,
         OPALSTAFF_STAR_DURATION = total_day_time * 2,
 
         ORANGEAMULET_USES = 225,
         ORANGEAMULET_RANGE = 4,
         ORANGEAMULET_ICD = 0.33,
-        ORANGESTAFF_USES = 20,
+        ORANGESTAFF_USES = 20000,
 
         GREENAMULET_USES = 5,
         GREENAMULET_INGREDIENTMOD = 0.5,
-        GREENSTAFF_USES = 5,
+        GREENSTAFF_USES = 5000,
 
 		POCKETSCALE_USES = 100,
 
@@ -340,7 +340,7 @@ function Tune(overrides)
         SADDLE_WAR_SPEEDMULT = 1.25,
         SADDLE_RACE_SPEEDMULT = 1.55,
 
-        CANE_SPEED_MULT = 1.25,
+        CANE_SPEED_MULT = 2.5,
         PIGGYBACK_SPEED_MULT = 0.9,
         HEAVY_SPEED_MULT = .15,
 
@@ -2597,7 +2597,7 @@ function Tune(overrides)
         TORNADO_WALK_SPEED = 25,
         TORNADO_DAMAGE = 7,
         TORNADO_LIFETIME = 5,
-        TORNADOSTAFF_USES = 15,
+        TORNADOSTAFF_USES = 15000,
 
         FEATHERFAN_USES = 15,
         FEATHERFAN_COOLING = -50,
