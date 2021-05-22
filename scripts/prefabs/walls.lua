@@ -67,9 +67,13 @@ local function onhealthchange(inst, old_percent, new_percent)
         inst.AnimState:PlayAnimation(anim_to_play.."_hit")
         inst.AnimState:PushAnimation(anim_to_play, false)
     else
-        if old_percent > 0 then
+        if old_percent > 0 and new_percent <= 0 then
             clearobstacle(inst)
         end
+	if new_percent < 1 then inst.components.health:StartRegen(20000, 1) end
+	if new_percent >= 1 then inst.components.health:StopRegen() end
+
+
         inst.AnimState:PlayAnimation(anim_to_play)
     end
 end
